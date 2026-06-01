@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #0A0A0A;
+    color: #F5F5F5;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: linear-gradient(to bottom, rgba(10,10,10,0.96), transparent);
+    backdrop-filter: blur(2px);
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #D4D4D4;
+    text-decoration: none;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #C8102E;
+}
+
+.btn-primary {
+    background: #C8102E;
+    color: #fff;
+    padding: 8px 18px;
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #9B0B22;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #F5F5F5;
+    padding: 8px 18px;
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid #2E2E2E;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    border-color: #C8102E;
+    color: #C8102E;
+}
+
+#hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #0A0A0A 0%, #0A0A0A 100%);
+    z-index: 0;
+}
+
+.hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(200,16,46,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200,16,46,0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 660px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(200,16,46,0.12);
+    border: 1px solid rgba(200,16,46,0.3);
+    padding: 6px 16px;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #C8102E;
+    margin-bottom: 28px;
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.8rem, 5.5vw, 5.2rem);
+    font-weight: 300;
+    line-height: 1.06;
+    margin-bottom: 28px;
+}
+
+.hero-title em {
+    font-style: normal;
+    color: #C8102E;
+    font-weight: 600;
+}
+
+.hero-sub {
+    font-size: 0.97rem;
+    color: #D4D4D4;
+    line-height: 1.75;
+    max-width: 500px;
+    margin-bottom: 44px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 48px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.stat-num span {
+    color: #C8102E;
+}
+
+.stat-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #D4D4D4;
+}
+
+#services {
+    background: #111111;
+    padding: 100px 0;
+}
+
+.section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.section-label {
+    font-size: 0.63rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C8102E;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.section-label::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: #C8102E;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 16px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 64px;
+    border: 1px solid #2E2E2E;
+}
+
+.service-card {
+    background: #181818;
+    padding: 44px 36px;
+    border-right: 1px solid #2E2E2E;
+    border-bottom: 1px solid #2E2E2E;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    background: #222222;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(200,16,46,0.12);
+    border: 1px solid rgba(200,16,46,0.3);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.service-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.service-desc {
+    font-size: 0.81rem;
+    color: #D4D4D4;
+    line-height: 1.75;
+}
+ 
+/* 效果1：按钮悬停轻微上浮 + 阴影 */
+.btn-primary {
+    transition: a11 0.3s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(200,16,46,0.3);
+}
+
+/* 效果2：服务卡片悬停 - 顶部红色线条动画 */
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #C8102E;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+.service-card:hover::before {
+    transform: scaleX(1);
+}

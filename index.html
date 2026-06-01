@@ -2,89 +2,73 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>我的产品展示</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .product {
-            background: white;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .product img {
-            width: 100%;
-            display: block;
-        }
-        .product .caption {
-            padding: 15px;
-            font-size: 18px;
-            text-align: center;
-            color: #333;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #777;
-            font-size: 14px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的企业官网</title>
+    <!-- 引用 CSS 样式文件 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>✨ 我的产品展示 ✨</h1>
 
-    <!-- 这里每增加一个产品，就复制下面一整段（从 <div class="product"> 到 </div>） -->
-    <!-- 把 src="你的图片文件名.jpg" 里的文件名改成你实际图片的名字 -->
-    
-    <div class="product">
-        <img src=https://github.com/user-attachments/assets/d1637393-3fa7-41c5-b109-85ba9914c12c.jpg" alt="产品图片1">
-        <div class="caption">产品名称 1</div>
-    </div>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="logo">Luminos company</div>
+        <div class="nav-links">
+            <a href="#">服务</a>
+            <a href="#">流程</a>
+            <a href="#">关于</a>
+        </div>
+        <a href="#" class="btn-primary">联系我们</a>
+    </nav>
 
-    <div class="product">
-        <img src=https://github.com/user-attachments/assets/94247c24-de8a-4be6-9d40-d1cae41aac2a.jpg" alt="产品图片2">
-        <div class="caption">产品名称 2</div>
-    </div>
-  
- <div class="product">
-        <img src="https://github.com/user-attachments/assets/d3eb8bc1-2a7f-497b-a040-f53a262d1b71.jpg" alt="产品图片2">
-        <div class="caption">产品名称 2</div>
-   
-  </div> <div class="product">
-        <img src=https://github.com/user-attachments/assets/5ace10e5-f247-4b11-aef3-441728841a08.jpg" alt="产品图片2">
-        <div class="caption">产品名称 2</div>
-    </div>
+    <!-- 主体内容区 -->
+    <main>
+        <!-- 首屏区域（Hero Section） -->
+        <section id="hero">
+            <!-- 背景装饰元素（如渐变、网格） -->
+            <div class="hero-bg"></div>
+            <div class="hero-grid"></div>
 
-   </div> <div class="product">
-        <img src="https://github.com/user-attachments/assets/56bfeb79-fbfd-413e-8eb0-26fa95e064cc" alt="产品图片2">
-        <div class="caption">产品名称 2</div>
-    </div>
+            <div class="hero-content">
+                <div class="hero-badge">✨ 专业.可靠</div>
+                <h1 class="hero-title">
+                    打造专业的<br>
+                    <em>服务体验</em>
+                </h1>
+                <p class="hero-sub">我们帮助像您一样的企业，通过前沿的设计与技术，在数字化浪潮中脱颖而出。</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary">开始旅程</a>
+                    <a href="#" class="btn-secondary">了解我们</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-num"><span>500+</span></div>
+                        <div class="stat-label">成功案例</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num"><span>98%</span></div>
+                        <div class="stat-label">客户满意</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-   </div> <div class="product">
-        <img src="eac36caeffeb1da5ce9cdcdd5cfbe405.jpg" alt="产品图片2">
-        <div class="caption">产品名称 2</div>
-    </div>
-  
-  </div> <div class="product">
-        <img src="chttps://github.com/user-attachments/assets/cf741b69-1b9e-43d2-b4a3-8d7ab64c0124" alt="产品图片2">
-        <div class="caption">产品名称 2</div>
-    </div>
-
-    <!-- 你可以继续添加更多产品，按上面格式复制即可 -->
-
-    <div class="footer">
-        扫码查看我的产品册
-    </div>
+        <!-- 服务区域 -->
+        <section id="services">
+            <div class="section-inner">
+                <div class="section-label">我们的服务</div>
+                <h2 class="section-title">一站式解决方案</h2>
+                <div class="services-grid">
+                    <!-- 服务卡片 1 -->公司注册</h3>
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3 class="service-name">银行账户</h3>
+                        <p class="service-desc">从0到1构建品牌核心价值...</p>
+                    </div>
+                    <!-- 更多卡片（2-3个）... -->会计服务</h3>
+                                                         </div>
+                                                         </div>
+        </section>
+    </main>
+    <!-- 后续章节（流程、评价等）和页脚类似，暂略 -->
 </body>
 </html>
